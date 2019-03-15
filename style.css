@@ -1,18 +1,71 @@
-
-
-div.hero--background-image {
+/********************
+******* HERO ********
+*********************/
+.hero--background-image {
   background-image:url(images/hero.jpg);
   background-size: cover;
-  height: 500px;
-  width: auto;
+  background-position: center top;
+  height: 400px;
   position: relative;
+  width: auto;
 }
 
-.hero--action-bar{
+.hero--action-bar {
+  background: rgba(0, 0, 0, .4);
+  bottom: 0;
+  color: white;
+  height: 70px;
+  padding: 10px;
   position: absolute;
-width: 100%;
-background: rgba(0,0,0,.4);
-color: white;
-padding: 10px;
-bottom: 0;
+  width: 100%;
+}
+
+.hero--action-bar .row {
+  /* FLEX BOX: center vertically, justify columns to left and right of row
+  * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero--action-bar .zipcode-column {
+  text-align: right;
+}
+
+/*****************
+**** ACTIONBAR *****
+*****************/
+.form-zipcode {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.form-zipcode i {
+  color: white;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.form-zipcode input {
+  display: inline-block !important;
+  max-width: 240px;
+}
+
+.form-zipcode button {
+  margin-left: 5px;
+}
+
+
+/*****************
+**** BUTTONS *****
+*****************/
+.btn-theme-green {
+  background-color: #8fc740;
+  border-color: #8fc740;
+}
+
+.btn-theme-green:hover {
+  background-color: #80b13a;
+  border-color: #80b13a;
 }
