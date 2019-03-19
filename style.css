@@ -69,10 +69,271 @@
   background-color: #80b13a;
   border-color: #80b13a;
 }
-.veteran-owned-points {
+/*****************
+**** Veteran owned *****
+*****************/
+.veteran-owned-points p {
   font-size: 32px;
 }
 
-.my-5 {
+.veteran-owned-title {
 font-size: 36px;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+/*****************
+**** LINKS *****
+*****************/
+.text-link-dark {
+  color: #343a40;
+  text-decoration: underline;
+}
+.text-link-dark:hover {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.text-link-white {
+  color: white;
+}
+.text-link-white:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/********************
+******* NAV ********
+*********************/
+
+nav .text-link-dark {
+  text-decoration: none;
+}
+
+.phone-number {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.nav-links a {
+  margin-right: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a:last-child {
+  margin-right: 0;
+}
+
+/********************
+******* HERO ********
+*********************/
+.hero--background-image {
+  background-image:url(images/hero.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 400px;
+  position: relative;
+  width: auto;
+}
+
+.hero--action-bar {
+  background: rgba(0, 0, 0, .4);
+  bottom: 0;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.hero--action-bar .row {
+  /* FLEX BOX: center vertically, justify columns to left and right of row
+  * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  */
+  align-items: center;
+}
+
+.zipcode-column--form {
+  text-align: right;
+}
+
+.zipcode-column i {
+  color: #8fc740;
+}
+
+/*****************
+**** ACTIONBAR *****
+*****************/
+.form-zipcode {
+
+}
+
+.form-zipcode i {
+  color: white;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.form-zipcode input {
+  display: inline-block !important;
+  max-width: 240px;
+}
+
+.form-zipcode button {
+  margin-left: 5px;
+}
+
+/*****************
+**** BUTTONS *****
+*****************/
+.btn-theme-green {
+  background-color: #8fc740;
+  border-color: #8fc740;
+}
+
+.btn-theme-green:hover {
+  background-color: #80b13a;
+  border-color: #80b13a;
+}
+
+/* BTN LINK DARK */
+.btn-link-dark {
+  color: #343a40;
+  text-decoration: underline;
+}
+
+.btn-link-dark:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  text-decoration: none;
+}
+
+/**********************
+**** Featurettes ******
+***********************/
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/************************
+**** VETERAN OWNED ******
+************************/
+
+.veteran-owned-points p {
+  font-size: 1.5rem;
+}
+
+/************************
+****** Instagram ********
+************************/
+
+/* :last-child
+*
+* https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:last-child
+*
+*/
+.instagram-container .col:last-child {
+  padding-left: 0;
+}
+
+/* position:absolute
+*
+* https://developer.mozilla.org/en-US/docs/Web/CSS/position
+*
+*/
+.ig-logo {
+  left: 10px;
+  bottom: 10px;
+  position: absolute;
+  width: 40px;
+}
+
+/************************
+****** Ratings ********
+************************/
+.ratings-subtext {
+  font-size: 2rem;
+}
+
+.ratings-logos a {
+  display: inline-block;
+  /*
+  * https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties#Margin_and_Padding_Properties
+  */
+  margin: 2rem 2rem 0 0;
+}
+
+.ratings-logos a:last-child {
+  /*
+  * https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:last-child
+  */
+  margin-right: 0;
+}
+
+/************************
+****** Junk we remove ********
+************************/
+.junk-we-remove--text {
+  font-size: 1.5rem;
+}
+
+/*********************
+****** Footer ********
+**********************/
+footer {
+  color: white;
+  background-color: #231f20;
+}
+
+footer img {
+  height: 70px;
+}
+
+.navbar-footer {
+  display: block;
+}
+
+.navbar-footer a {
+  color: white;
+  margin-right: 10px;
+}
+
+.navbar-footer a:last-child {
+  color: white;
+  margin-right: 0;
+}
+
+.navbar-footer.navbar-footer--top a {
+  font-size: 1.25rem;
+}
+
+
+
+/********************
+**** RESPONSIVE *****
+********************/
+
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
