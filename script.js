@@ -1,5 +1,6 @@
 function getZipcode(zipcode) {
   console.log(zipcode);
+  $('#modal--zipcode').val(zipcode)
 }
 
 
