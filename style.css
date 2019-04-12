@@ -325,6 +325,19 @@ footer img {
   padding-bottom: 20px;
 }
 
+.footer-bottom {
+  padding-bottom:20px;
+}
+
+.reviews {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.terms-service {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 footer {
   text-align: center;
